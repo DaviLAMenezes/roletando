@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roletando</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Roletando!</h1>
+        <p>Tente a sua sorte, amigo!</p>
+    </header>
+
+    <div class="container">
+        <div class="display-container">
+            <div class="display-digit" id="digit-1">0</div>
+            <div class="display-digit" id="digit-2">0</div>
+        </div>
+        <button class="button" id="rollButton" onclick="handleButtonClick()">Girar</button>
+
+        <!--div class="adsense-container">
+            <a href="https://freebitco.in/?r=6649717" target="_blank" id="bannerLink">
+                <img src="https://static1.freebitco.in/banners/728x90-3.png" alt="Publicidade" id="bannerAd">
+            </a>
+        </div>-->
+    </div>
+
+    <!-- Pop-up -->
+    <div id="popup" class="popup">
+        <div class="popup-content" id="popupContent">
+            <canvas id="qrCode"></canvas> <!-- Aqui será exibido o QR Code -->
+            <p id="resultMessage"></p>
+            <button class="button" id="closePopup" onclick="closePopup()">Fechar</button>
+            <button class="button" id="shareButton" onclick="sharePopup()">Compartilhar</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Roletando - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
